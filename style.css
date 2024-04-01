@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+}
+
+.background {
+  filter:grayscale(0.5);
+}
+
+.background-frame{
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  margin-top: 10%;
+  width: fit-content;
+  width: -moz-fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoFirstName {
+  font-size: xx-large;
+  border: solid 5px black;
+  border-bottom: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logoFamilyName {
+  font-size: xx-large;
+  border: solid 5px black;
+  border-top: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  top: -15px;
+}
+
+.logoDesc {
+  font-size: larger;
+  position: relative;
+  top:-10px;
+  color: grey;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+}
+
+#sider {
+  background-color: #EAE9EC;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#content {
+  width: 85%;
+}
+
+.socialLogos {
+  display: flex;
+  flex-direction: row;
+  
+  height: 30%;
+}
+
+.socialLink {
+  width: 30%;
+  margin: auto;
+}
+
+.linkedin {
+  fill: #0077B5;
+}
+
+.X {
+  fill: black;
+}
+
+.github {
+  fill: #181717;
+}
+
+.primaryBlock {
+  width:80%;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.primaryBlock:hover  {
+  filter: brightness(1.1); 
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.rightBlock:hover {
+  transform: scale(1.05) translate(-3%);
+}
+
+.leftBlock:hover {
+  transform: scale(1.05) translate(3%);
+}
+
+.secondaryBlock {
+  width: 20%;
+  height: auto;
+}
+
+.contentRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+hr {
+  margin-top:3%;
+  margin-bottom: 3%;
+}
+
+.background-logo {
+  color: black;
+  width: 40%;
+  margin:auto;
+}
