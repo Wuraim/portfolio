@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #EAE9EC;
 }
 
 @media (width <= 1250px) {
@@ -13,6 +14,8 @@ body {
   
   .primaryBlock {
     width: 100%;
+    padding: 5%;
+    margin: 5%;
   }
 
   .secondaryBlock {
@@ -29,20 +32,13 @@ body {
     align-items: center;
   }
 
-  #content {
-    width: 85%;
-  }
-
-  .primaryBlock {
-    width: 80%;
-  }
-
   .secondaryBlock {
     width: 20%;
     height: auto;
   }
 
   .primaryBlock {
+    width: 80%;
     transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -75,15 +71,20 @@ body {
   float: right;
   display: flex;
   flex-direction: row;
+  background: no-repeat url("background.jpg");
 }
 
 .logo {
-  margin-top: 10%;
-  width: fit-content;
   width: -moz-fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+}
+
+.logoImg {
+  width: 75%;
+  height: auto;
 }
 
 .logoFirstName {
@@ -105,22 +106,22 @@ body {
 }
 
 .logoDesc {
-  font-size: larger;
+  font-size: large;
   position: relative;
-  top:-10px;
   color: grey;
 }
 
 .socialLogos {
   display: flex;
   flex-direction: row;
-  
   height: 30%;
+  margin-top: auto;
+  margin-bottom: 0px;
 }
 
 .socialLink {
-  width: 30%;
-  margin: auto;
+  width: 15%;
+  margin: 10px;
 }
 
 .linkedin {
@@ -135,8 +136,6 @@ body {
   fill: #181717;
 }
 
-
-
 .contentRow {
   display: flex;
   flex-direction: row;
@@ -148,9 +147,42 @@ hr {
   margin-bottom: 3%;
 }
 
-.background-logo {
-  color: black;
-  width: 40%;
-  margin:auto;
+.primaryBlock {
+ 
 }
 
+.frame {
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  border: solid black 1px;
+  border-radius: 15px;
+  padding: 15px;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.2px);
+  -webkit-backdrop-filter: blur(10.2px);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+}
+
+.selfie {
+  border-radius: 15px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+}
