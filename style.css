@@ -3,62 +3,14 @@ body {
   background-color: #EAE9EC;
 }
 
-@media (width <= 1250px) {
-  #sider {
-    display: none;
-  }
-
-  #content {
-    width: 100%;
-  }
-  
-  .primaryBlock {
-    width: 100%;
-    padding: 5%;
-    margin: 5%;
-  }
-
-  .secondaryBlock {
-    display: none;
-  }
-}
-
-@media (width > 1250px) {
-  #sider {
-    background-color: #EAE9EC;
-    width: 15%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .secondaryBlock {
-    width: 20%;
-    height: auto;
-  }
-
-  .primaryBlock {
-    width: 80%;
-    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .primaryBlock:hover  {
-    filter: brightness(1.1); 
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .rightBlock:hover {
-    transform: scale(1.05) translate(-3%);
-  }
-  
-  .leftBlock:hover {
-    transform: scale(1.05) translate(3%);
-  }
-}
-
 #main {
   display: flex;
   flex-direction: row;
+}
+
+#content {
+  align-self: center;
+  width: 100%;
 }
 
 .background {
@@ -111,29 +63,54 @@ body {
   color: grey;
 }
 
-.socialLogos {
-  display: flex;
-  flex-direction: row;
-  height: 30%;
+#socialLogosLines {
   margin-top: auto;
   margin-bottom: 0px;
 }
 
+.socialLogos {
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  border-radius: 100px;
+  padding: 5px;
+  width: min-content;
+}
+
 .socialLink {
-  width: 15%;
-  margin: 10px;
+  border-radius: 100%;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+}
+
+.socialLink > svg {
+  margin: 15px;
 }
 
 .linkedin {
-  fill: #0077B5;
+  background-color: #0077B5;
+}
+
+.linkedin > svg {
+  fill: white;
 }
 
 .X {
-  fill: black;
+  background-color: black;
+}
+
+.X > svg {
+  fill: white;
 }
 
 .github {
-  fill: #181717;
+  background-color: #181717;
+}
+
+.github > svg {
+  fill: white;
 }
 
 .contentRow {
@@ -147,13 +124,12 @@ hr {
   margin-bottom: 3%;
 }
 
-.primaryBlock {
- 
-}
-
 .frame {
-  width: 80%;
-
+  width: min-content;
+  margin-top: 5%; 
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: row;
   border: solid black 1px;
