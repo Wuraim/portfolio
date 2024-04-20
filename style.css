@@ -31,7 +31,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .logoImg {
@@ -132,7 +131,6 @@ hr {
   margin-right: auto;
   display: flex;
   flex-direction: row;
-  border: solid black 1px;
   border-radius: 15px;
   padding: 15px;
 
@@ -161,4 +159,61 @@ hr {
 .desc {
   display: flex;
   flex-direction: column;
+}
+
+.line {
+  margin-left: 2%
+}
+
+.name {
+  font-size: x-large;
+}
+
+.age {
+  color:grey;
+}
+
+.job {
+  color:black;
+}
+
+#line3 {
+  display: flex;
+  flex-direction: row;
+}
+
+#experience {
+  width: 50%;
+}
+
+#blockCV {
+  width: 50%;
+}
+
+#frameCV {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: fill .4s ease;
+  fill:black;
+}
+
+#frameCV:hover {
+  fill:grey;
+}
+
+.CVlogo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+
+#corpo > li {
+  display: flex;
+  flex-direction: column;
+}
+
+#corpo > li > img {
+  width:30%;
 }
