@@ -7,23 +7,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./tailwind.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grégoire Lorgnier</title>
   </head>
   <body>
     <div id="main">  
       <div id="content">
-        
-          <div class="frame">
+          <div class="frame flex flex-col md:flex-row m-8">
             <div class="presentation">
-              <span class="anton-regular name">GRÉGOIRE LORGNIER</span>
-              <span class="roboto-regular age">25 ans</span>
-              <span class="roboto-regular job">Ingénieur logiciel</span>
+              <span class="anton-regular text-3xl">GRÉGOIRE LORGNIER</span>
+              <span class="roboto-regular text-slate-600">25 ans</span>
+              <span class="roboto-regular">Ingénieur logiciel</span>
               <span class="roboto-regular">Lille - France</span>
               <br />
-              <span class="roboto-regular job">Développeur fullstack</span>
-              <div id="socialLogosLines">
-                <div class="socialLogos">
+              
+              <div class="mt-auto mb-0">
+                <div class="flex flex-row gap-2 justify-center">
 
                   <a href="https://www.linkedin.com/in/gr%C3%A9goire-lorgnier-212550172/" title="LinkedIn - Grégoire LORGNIER">
                     <div class="socialLink linkedin">
@@ -57,35 +57,56 @@
           <hr />
           <div id="line2" class="line roboto-regular">
             <h2>Mes projets</h2>
+            <span class="text-lg">
+              Hello world!
+            </span>
+            <span>
+              Hello world!
+            </span>
           </div>
           <hr />
-          <div id="line3" class="line roboto-regular">
+          <div id="line3" class="roboto-regular flex flex-col md:flex-row align">
             <div id="experience">
               <h2>Mes expériences</h2>
-              <ul id="corpo">
-                <li>
-                  <span>Diplome en génie des systêmes d'information</span>
-                  <img src="./eilco.png" />
+              <ul id="corpo" class="flex flex-col items-center gap-4 my-4">
+                <li class="frame w-3/4 flex flex-row p-4  gap-2">
+                  <img src="./eilco_rotate.png" alt="EILCO" class="max-w-[50px] max-h-[100px]"/>
+                  <div class="flex flex-col">
+                    <span class="font-bold">EILCO</span>
+                    <span>Diplome en génie des systêmes d'information</span>
+                    <span class="dateExperience">2016 - 2022</span>
+                  </div>
                 </li>
-                <li>
-                  <span>Développeur web - Contrat de professionnalisation - 1 an</span>
-                  <img src="./sopra_steria.png" />
+                <li class="frame w-3/4 flex flex-row p-4 gap-2">
+                  <img src="./sopra_steria.png" alt="Sopra Steria" class="max-w-[50px] max-h-[100px]"/>
+                  <div class="flex flex-col">
+                    <span class="font-bold">Sopra Steria</span>
+                    <span>Développeur web </span>
+                    <span>Contrat de professionnalisation </span>
+                    <span class="dateExperience">2021 - 2022</span>
+                  </div>
                 </li>
-                <li>
-                  <span>Ingénieur d'étude et développement - CDI - Depuis septembre 2022</span>
-                  <img src="./viveris.png" />
+                <li class="frame w-3/4 flex flex-row p-4 gap-2">
+                  <img src="./viverisRotate.png" alt="Viveris" class="max-w-[50px] max-h-[100px]"/>
+                  <div class="flex flex-col">
+                    <span class="font-bold">Viveris</span>
+                    <span>Ingénieur d'étude et développement</span>
+                    <span class="dateExperience">Depuis 2022</span>
+                  </div>
                 </li>
               </ul>
             </div>
             <div id="blockCV">
-              <a href="./CV_Grégoire_Lorgnier.pdf" download="CV_Grégoire_LORGNIER.pdf">
-                <div id="frameCV" class="frame">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class=CVlogo>
-                    <path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM216 232V334.1l31-31c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-72 72c-9.4 9.4-24.6 9.4-33.9 0l-72-72c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l31 31V232c0-13.3 10.7-24 24-24s24 10.7 24 24z"/>
-                  </svg>
-                  <span class="roboto-bold">Télécharger mon CV</span>
-                </div>
-              </a>
+              <div id="frameCV" class="frame">
+                <a href="./CV_Grégoire_Lorgnier.pdf" download="CV_Grégoire_LORGNIER.pdf">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class=CVlogo>
+                  <path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM216 232V334.1l31-31c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-72 72c-9.4 9.4-24.6 9.4-33.9 0l-72-72c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l31 31V232c0-13.3 10.7-24 24-24s24 10.7 24 24z"/>
+                </svg>
+                <span class="roboto-bold">Télécharger mon CV</span>
+                </a>
+              </div>
+              
             </div>
           </div>
           <hr />
