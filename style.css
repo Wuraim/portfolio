@@ -137,11 +137,6 @@ body {
     flex-direction: column;
   }
   
-  #blockCV > div > a {
-    text-decoration: none;
-    color: black;
-  }
-  
   #frameCV {
     padding: 40px;
     display: flex;
