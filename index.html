@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -57,38 +57,43 @@
           <hr />
           <div id="line2" class="line roboto-regular">
             <h2>Mes projets</h2>
-            <span class="text-lg">
-              Hello world!
-            </span>
-            <span>
-              Hello world!
-            </span>
+            <ul>
+              <li>Portfolio</li>
+              <li>Advent of Code</li>
+              <li>WeatherApp</li>
+            </ul>
           </div>
           <hr />
           <div id="line3" class="roboto-regular flex flex-col md:flex-row align">
             <div id="experience">
               <h2>Mes expériences</h2>
               <ul id="corpo" class="flex flex-col items-center gap-4 my-4">
-                <li class="frame w-3/4 flex flex-row p-4  gap-2">
-                  <img src="./eilco_rotate.png" alt="EILCO" class="max-w-[50px] max-h-[100px]"/>
+                <li class="frame w-3/4 flex flex-row p-4 gap-2 items-center">
+                  <div class="min-w-[50px] min-h-[100px] border-r-2 border-gray-600">
+                    <img src="./eilco_rotate.png" alt="EILCO" class="max-w-[50px] max-h-[100px] mx-auto" />
+                  </div>
                   <div class="flex flex-col">
                     <span class="font-bold">EILCO</span>
                     <span>Diplome en génie des systêmes d'information</span>
                     <span class="italic">2016 - 2022</span>
                   </div>
                 </li>
-                <li class="frame w-3/4 flex flex-row p-4 gap-2">
-                  <img src="./sopra_steria.png" alt="Sopra Steria" class="max-w-[50px] max-h-[100px]"/>
-                  <div class="flex flex-col">
+                <li class="frame w-3/4 flex flex-row p-4 gap-2 items-center">
+                  <div class="min-w-[50px] min-h-[100px] border-r-2 border-gray-600">
+                    <img src="./sopra_steria.png" alt="Sopra Steria" class="max-w-[50px] max-h-[100px] mx-auto" />
+                  </div>
+                  <div class="flex flex-col w-inherit">
                     <span class="font-bold">Sopra Steria</span>
                     <span>Développeur web </span>
                     <span>Contrat de professionnalisation </span>
                     <span class="italic">2021 - 2022</span>
                   </div>
                 </li>
-                <li class="frame w-3/4 flex flex-row p-4 gap-2">
-                  <img src="./viverisRotate.png" alt="Viveris" class="max-w-[50px] max-h-[100px]"/>
-                  <div class="flex flex-col">
+                <li class="frame w-3/4 flex flex-row p-4 gap-2 items-center">
+                  <div class="min-w-[50px] min-h-[100px] border-r-2 border-gray-600">
+                    <img src="./viverisRotate.png" alt="Viveris" class="max-w-[50px] max-h-[100px] mx-auto" />
+                  </div>
+                  <div class="flex flex-col w-inherit">
                     <span class="font-bold">Viveris</span>
                     <span>Ingénieur d'étude et développement</span>
                     <span class="italic">Depuis 2022</span>
@@ -97,21 +102,39 @@
               </ul>
             </div>
             <div class="flex justify-center">
+              <!-- TODO: Ajout un effet au click et au hover -->
               <a href="./CV_Grégoire_Lorgnier.pdf" class="w-3/4" download="CV_Grégoire_LORGNIER.pdf">
-              <div class="frame flex flex-row md:flex-col p-4 items-center justify-center gap-2">
-                <span class="roboto-bold">Télécharger mon CV</span>
-                <div class="border-solid border-4 border-black rounded-full">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="m-[10px] w-[20px]">
-                    <path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM216 232V334.1l31-31c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-72 72c-9.4 9.4-24.6 9.4-33.9 0l-72-72c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l31 31V232c0-13.3 10.7-24 24-24s24 10.7 24 24z"/>
-                  </svg>
+              <div class="frameDownload flex flex-row md:flex-col items-center bg-gray-200 border-2 border-black">
+                <span class="roboto-bold text-xl mx-auto">Télécharger le CV</span>
+                <div class="border-l-2 border-black">
+                  <div class="m-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="m-[10px] w-[20px]">
+                      <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+                    </svg>
+                  </div>
                 </div>
+
               </div>
             </a>
             </div>
           </div>
           <hr />
-          <div class="line roboto-regular">
+          <div class="roboto-regular">
             <h2>Mes compétences ⚡</h2>
+            <div>
+              <span>Language de programation :</span>
+              <ul>
+                <li>JS / TS</li>
+                <li>C#</li>
+                <li>SQL / P-SQL</li>
+              </ul>
+              <span>Techno :</span>
+              <ul>
+                <li>Tailwind</li>
+                <li>Vue 3 / Nuxt</li>
+                <li>Angular</li>
+              </ul>
+            </div>
           </div>
       </div>
     </div>
