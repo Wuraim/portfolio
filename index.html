@@ -14,7 +14,7 @@
   <body>
     <div id="main">  
       <div id="content">
-          <div class="frame flex flex-col md:flex-row m-8">
+          <div class="frame flex flex-col md:flex-row m-4">
             <div class="presentation">
               <span class="anton-regular text-3xl">GRÉGOIRE LORGNIER</span>
               <span class="roboto-regular text-slate-600">25 ans</span>
@@ -55,27 +55,9 @@
             <img src="./background.jpg" alt="selfi Grégoire LORGNIER" class="selfie"/>
           </div>
           <hr />
-          <div id="line2" class="line roboto-regular">
-            <h2>Mes projets</h2>
-            <div>
-              <div class="frame m-4 p-2">
-                <h3>Portfolio</h3>
-                <span>Repository de ce portfolio</span>
-              </div>
-              <div class="frame m-4 p-2">
-                <h3>Portfolio</h3>
-                <span>Repository de ce portfolio</span>
-              </div>
-              <div class="frame m-4 p-2">
-                <h3>Portfolio</h3>
-                <span>Repository de ce portfolio</span>
-              </div>
-            </div>
-          </div>
-          <hr />
           <div id="line3" class="roboto-regular flex flex-col md:flex-row align">
             <div id="experience">
-              <h2>Mes expériences</h2>
+              <h2 class="text-center text-xl">Mes expériences</h2>
               <ul id="corpo" class="flex flex-col items-center gap-4 my-4">
                 <li class="frame w-3/4 flex flex-row p-4 gap-2 items-center">
                   <div class="min-w-[50px] min-h-[100px] border-r-2 border-gray-600">
@@ -111,25 +93,23 @@
               </ul>
             </div>
             <div class="flex justify-center">
-              <!-- TODO: Ajout un effet au click et au hover -->
               <a href="./CV_Grégoire_Lorgnier.pdf" class="w-3/4" download="CV_Grégoire_LORGNIER.pdf">
-              <div class="frameDownload flex flex-row md:flex-col items-center bg-gray-200 border-2 border-black">
-                <span class="roboto-bold text-xl mx-auto">Télécharger le CV</span>
-                <div class="border-l-2 border-black">
-                  <div class="m-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="m-[10px] w-[20px]">
-                      <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
-                    </svg>
+                <div class="frameDownload flex flex-row md:flex-col items-center bg-gray-200 border-2 border-black shadow-md active:shadow-none transform active:translate-y-1">
+                  <span class="roboto-bold text-xl mx-auto">Télécharger le CV</span>
+                  <div class="border-l-2 border-black">
+                    <div class="m-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="m-[10px] w-[20px]">
+                        <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+                      </svg>
+                    </div>
                   </div>
                 </div>
-
-              </div>
-            </a>
+              </a>                            
             </div>
           </div>
           <hr />
           <div class="roboto-regular">
-            <h2>Mes compétences ⚡</h2>
+            <h2 class="text-center text-xl">Mes compétences</h2>
             <div>
               <div class="frame m-4 p-2">
                 <h3 class="text-center italic">Front</h3>
@@ -140,7 +120,6 @@
                     <img src="/vue.svg" class="max-h-[50px] max-w-[50px]" alt="Vue.js logo" />
                     <img src="/nuxt.svg" class="max-h-[50px] max-w-[50px]" alt="Nuxt logo" />
                     <img src="/angular-icon-1.svg" class="max-h-[50px] max-w-[50px]" alt="Angular logo"/>
-
                 </div>
               </div>
               <div class="frame m-4 p-2">
@@ -153,6 +132,27 @@
                     <img src="/sql.svg" class="max-h-[50px] max-w-[50px]" alt="SQL Microsoft Server logo" />
                     <img src="/postgresql.svg" class="max-h-[50px] max-w-[50px]" alt="Postgre-SQL logo" />
                 </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="line roboto-regular">
+            <h2 class="text-center text-xl">Mes projets</h2>
+            <div>
+              <div class="frame m-4 p-2 flex flex-col">
+                <h3 class="italic underline"><a href="https://github.com/Wuraim/portfolio">Portfolio</a></h3>
+                <span>Code source de ce site internet</span>
+                <span class="text-sm font-bold">Vite - Tailwind</span>
+              </div>
+              <div class="frame m-4 p-2 flex flex-col">
+                <h3 class="italic underline"><a href="https://github.com/Wuraim/AdventOfCode">Advent of Code</a></h3>
+                <span>Mes solutions aux différents problèmes algorithmique de l'advent of code de 2023.</span>
+                <span class="text-sm font-bold">JS</span>
+              </div>
+              <div class="frame m-4 p-2 flex flex-col">
+                <h3 class="italic underline"><a href="">Générateur de labyrinthe 2D</a></h3>
+                <span>Repository de ce portfolio</span>
+                <span class="text-sm font-bold">Java - Java FX</span>
               </div>
             </div>
           </div>
