@@ -14,7 +14,7 @@ Bienvenue sur mon portfolio de développeur ! 🚀
 
 ## Aperçu
 
-Ce projet est mon portfolio personnel en tant que développeur. Il met en avant mes compétences, mes projets et mes expériences professionnelles. Il est conçu en HTML et CSS natif avec une utilisation de Tailwind CSS pour le stylisme, et Vite en tant que serveur de développement.
+Ce projet est mon portfolio personnel en tant que développeur. Il met en avant mes compétences, mes projets et mes expériences professionnelles. Il est conçu en HTML et CSS natif avec une utilisation de Tailwind CSS pour le style et la gestion du design responsive, et Vite en tant que serveur de développement.
 
 ## Structure du Repository
 
@@ -55,7 +55,7 @@ portfolio/
 
 1. Clonez ce repository :
    ```bash
-   git clone https://github.com/ton-username/portfolio.git
+   git clone https://github.com/Wuraim/portfolio.git
    cd portfolio
    ```
 
@@ -75,16 +75,6 @@ portfolio/
    ```
 
 Le projet devrait maintenant être en cours d'exécution et accessible depuis votre navigateur.
-
-## Contributions
-
-Les contributions sont les bienvenues ! Si vous souhaitez apporter des améliorations ou ajouter de nouvelles fonctionnalités, veuillez suivre ces étapes :
-
-1. Fork le repository
-2. Créez une branche pour votre modification (`git checkout -b amélioration/ma-contribution`)
-3. Commitez vos modifications (`git commit -m 'Ajouter une explication de la contribution'`)
-4. Poussez vers la branche (`git push origin amélioration/ma-contribution`)
-5. Ouvrez une Pull Request
 
 ## Licence
 
