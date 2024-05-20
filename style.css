@@ -3,31 +3,14 @@ body {
     background-color: #EAE9EC;
   }
   
-  #main {
-    display: flex;
-    flex-direction: row;
-  }
-  
   #content {
     align-self: center;
     width: 100%;
   }
   
-  .background {
-    filter:grayscale(0.5);
-    width: 30%;
-    height:fit-content;
-  }
-  
-  .background-frame{
-    float: right;
-    display: flex;
-    flex-direction: row;
-    background: no-repeat url("background.jpg");
-  }
   
   .logo {
-      display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -129,9 +112,6 @@ body {
   backdrop-filter: blur(10.2px);
   -webkit-backdrop-filter: blur(10.2px);
 }
-
-  .selfie {
-  }
   
   .presentation {
     display: flex;
