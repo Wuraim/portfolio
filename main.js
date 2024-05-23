@@ -19,6 +19,18 @@ document.addEventListener("DOMContentLoaded", function() {
     const ageElement = document.getElementById("age");
     const birthdate = "1998-07-29";
     ageElement.textContent = calculateAge(birthdate) + " ans";
+
+    const twitterFrame = document.querySelector('#twitter');
+
+    const interval = setInterval(function() {
+        const iframe = twitterFrame.querySelector('iframe');
+        if (iframe) {
+            clearInterval(interval);
+            iframe.addEventListener('load', function() {
+                twitterFrame.classList.remove('hidden');
+            });
+        }
+    }, 100);
 });
 
 setupCounter(document.querySelector('#counter'))
