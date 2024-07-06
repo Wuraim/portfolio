@@ -76,14 +76,12 @@
 
         </div>
       </div>
-
-
-
           <hr />
-          <div id="line3" class="roboto-regular flex flex-col align">
-            <div id="experience">
-              <h2 class="text-center text-xl">Mes expériences</h2>
-              <ul id="corpo" class="flex flex-col items-center gap-4 my-4">
+          <h2 class="text-center text-xl">Mes expériences</h2>
+
+          <div class="roboto-regular flex flex-col lg:flex-row lg:justify-center m-4">
+            <div id="experience" class="lg:w-1/2">
+              <ul id="corpo" class="flex flex-col items-center gap-4">
                 <li class="frame w-3/4 flex flex-row p-4 gap-2 items-center">
                   <div class="min-w-[50px] min-h-[100px] border-r-2 border-gray-600">
                     <img src="/eilco_rotate.png" alt="EILCO" class="max-w-[50px] max-h-[100px] mx-auto" />
@@ -116,52 +114,208 @@
                   </div>
                 </li>
               </ul>
-            </div>
-            <div class="flex justify-center">
-              <a href="/CV_Grégoire_Lorgnier.pdf" class="w-3/4" download="CV_Grégoire_LORGNIER.pdf">
-                <div class="frameDownload flex flex-row items-center bg-gray-200 border-2 border-black shadow-md active:shadow-none transform active:translate-y-1">
-                  <span class="roboto-bold text-xl mx-auto">Télécharger le CV</span>
-                  <div class="border-l-2 border-black">
-                    <div class="m-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="m-[10px] w-[20px]">
-                        <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
-                      </svg>
+              <div class="flex justify-center mt-4">
+                <a href="/CV_Grégoire_Lorgnier.pdf" class="w-3/4" download="CV_Grégoire_LORGNIER.pdf">
+                  <div class="frameDownload flex flex-row items-center bg-gray-200 border-2 border-black shadow-md active:shadow-none transform active:translate-y-1">
+                    <span class="roboto-bold text-xl mx-auto">Télécharger le CV</span>
+                    <div class="border-l-2 border-black">
+                      <div class="m-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="m-[10px] w-[20px]">
+                          <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+                        </svg>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>                            
+                </a>
+              </div>
+            </div>
+            <div class="lg:w-1/2 lg:flex lg:flex-col lg:gap-4 hidden">
+              <div class="hidden lg:flex lg:justify-center">
+                <embed src="/CV_Grégoire_Lorgnier.pdf#view=FitW" class="h-[900px] w-[650px]" type="application/pdf" />
+              </div>
             </div>
           </div>
           <hr />
           <div class="roboto-regular">
             <h2 class="text-center text-xl">Mes compétences</h2>
-            <div>
-              <div class="frame m-4 p-2">
+            <div class="flex flex-col lg:flex-row">
+              <div class="frame m-4 p-2 lg:w-1/2">
                 <h3 class="text-center italic">Front</h3>
-                <div class="flex flex-row justify-evenly">
-                    <img src="/javascript.svg" class="max-h-[50px] w-1/6" alt="Javascript logo" />
-                    <img src="/typescript.svg" class="max-h-[50px] w-1/6" alt="Typescript logo" />
-                    <img src="/tailwindcss.svg" class="max-h-[50px] w-1/6" alt="tailwind logo" />
-                    <img src="/vue.svg" class="max-h-[50px] w-1/6" alt="Vue.js logo" />
-                    <img src="/nuxt.svg" class="max-h-[50px] w-1/6" alt="Nuxt logo" />
-                    <img src="/angular-icon-1.svg" class="max-h-[50px] w-1/6" alt="Angular logo"/>
+                <div class="flex flex-row justify-between">
+                  <div class="flex flex-col items-center w-1/6">
+                    <img src="/javascript.svg" class="max-h-[50px] max-w-[50px]" alt="Javascript logo" />
+                    <span class="text-xs font-bold underline">JavaScript</span>
+                  </div>
+                  <div class="flex flex-col items-center w-1/6">
+                    <img src="/typescript.svg" class="max-h-[50px] max-w-[50px]" alt="Typescript logo" />
+                    <span class="text-xs font-bold underline">TypeScript</span>
+                  </div>
+                  <div class="flex flex-col items-center justify-between w-1/6">
+                    <img src="/tailwindcss.svg" class="max-h-[50px] max-w-[50px] my-auto" alt="Tailwind logo" />
+                    <span class="text-xs font-bold underline">Tailwind</span>
+                  </div>
+                  <div class="flex flex-col items-center w-1/6">
+                    <img src="/vue.svg" class="max-h-[50px] max-w-[50px]" alt="Vue.js logo" />
+                    <span class="text-xs font-bold underline">Vue.js</span>
+                  </div>
+                  <div class="flex flex-col items-center w-1/6">
+                    <img src="/nuxt.svg" class="max-h-[50px] max-w-[50px]" alt="Nuxt logo" />
+                    <span class="text-xs font-bold underline">Nuxt</span>
+                  </div>
+                  <div class="flex flex-col items-center w-1/6">
+                    <img src="/angular-icon-1.svg" class="max-h-[50px] max-w-[50px]" alt="Angular logo" />
+                    <span class="text-xs font-bold underline">Angular</span>
+                  </div>
                 </div>
               </div>
-              <div class="frame m-4 p-2">
+
+              <div class="frame m-4 p-2 lg:w-1/2">
                 <h3 class="text-center italic">Back</h3>
                 <div class="flex flex-row justify-evenly">
-                    <img src="/c--4.svg" class="max-h-[50px] w-1/6" alt="C# logo" />
-                    <img src="/node.svg" class="max-h-[50px] w-1/6" alt="Node logo" />
-                    <img src="/express.svg" class="max-h-[50px] w-1/6" alt="Express.js logo" />
-                    <img src="/supabase.svg" class="max-h-[50px] w-1/6" alt="Supabase logo" />
-                    <img src="/sql.svg" class="max-h-[50px] w-1/6" alt="SQL Microsoft Server logo" />
-                    <div class="w-1/6 flex justify-center">
-                      <img src="/postgresql.svg" class="max-h-[50px]" alt="Postgre-SQL logo" />
-                    </div>
+                  <div class="flex flex-col items-center w-1/6">
+                    <img src="/c--4.svg" class="max-h-[50px] max-w-[50px]" alt="C# logo" />
+                    <span class="text-xs font-bold underline">C#</span>
+                  </div>
+                  <div class="flex flex-col items-center w-1/6">
+                    <img src="/node.svg" class="max-h-[50px] max-w-[50px]" alt="Node logo" />
+                    <span class="text-xs font-bold underline">Node.js</span>
+                  </div>
+                  <div class="flex flex-col items-center w-1/6">
+                    <img src="/swagger.svg" class="max-h-[50px] max-w-[50px]" alt="Swagger logo" />
+                    <span class="text-xs font-bold underline">Swagger</span>
+                  </div>
+                  <div class="flex flex-col items-center w-1/6">
+                    <img src="/rabbitmq.svg" class="max-h-[50px] max-w-[50px]" alt="RabbitMQ logo" />
+                    <span class="text-xs font-bold underline">RabbitMQ</span>
+                  </div>
+                  <div class="flex flex-col items-center w-1/6">
+                    <img src="/sql.svg" class="max-h-[50px] max-w-[50px]" alt="SQL Microsoft Server logo" />
+                    <span class="text-xs font-bold underline">T-SQL </span>
+                  </div>
+                  <div class="flex flex-col items-center w-1/6">
+                    <img src="/postgresql.svg" class="max-h-[50px] max-w-[50px]" alt="Postgre-SQL logo" />
+                    <span class="text-xs font-bold underline">PostgreSQL</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="frame m-4 p-5 bg-white rounded shadow">
+            <h1 class="text-2xl font-bold">Description technique de l'expérience professionnelle</h1>
+            <div class="flex flex-wrap space-x-4 m-4">
+              <div class="flex items-center space-x-2">
+                <div class="w-4 h-4 bg-blue-500"></div>
+                <span class="text-sm">Front</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div class="w-4 h-4 bg-green-500"></div>
+                <span class="text-sm">Back</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div class="w-4 h-4 bg-red-500"></div>
+                <span class="text-sm">BDD</span>
+              </div>
+            </div>
+            <div class="space-y-8">
+              <!-- Sopra Steria -->
+              <div>
+                <h2 class="text-xl font-semibold">Sopra Steria </h2>
+                <div class="border-l border-gray-400 pl-4 mt-2 space-y-2">
+                  <div>
+                    <h3 class="text-lg font-semibold">Développeur Web</h3>
+                    <span>Client : Monsieur Bricolage</span>
+                    <div class="flex items-center">
+                      <div class="w-1/4 h-2 bg-blue-500"></div>
+                      <div class="w-1/4 h-2 bg-green-500"></div>
+                      <div class="w-1/2 h-2 bg-red-500"></div>
+                    </div>
+                    <div class="hidden lg:flex items-center flex-row mt-1">
+                      <div class="w-1/4 flex flex-row gap-1">
+                        <img src="/javascript.svg" class="max-h-[30px] max-w-[30px]" alt="Javascript logo" />
+                        <img src="/jquery.svg" class="max-h-[30px] max-w-[30px]" alt="JQuery logo" />
+                        <img src="/aspnet.svg" class="max-h-[30px] max-w-[30px]" alt="asp.net log" />
+                      </div>
+                      <div class="w-1/4">
+                        <img src="/vb.svg" class="max-h-[30px] max-w-[30px]" alt="Visual Basic logo" />
+                      </div>
+                      <div class="w-1/2">
+                        <img src="/tsql.svg" class="max-h-[30px] max-w-[30px]" alt="SQL Microsoft Server logo" />
+                      </div>
+                    </div>
+                    <p class="mt-2 text-sm">Technologies : ASP.NET, JQuery, Visual Basic, T-SQL</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Viveris -->
+              <div>
+                <h2 class="text-xl font-semibold">Viveris</h2>
+                <div class="border-l border-gray-400 pl-4 mt-2 space-y-2">
+                  <!-- Full-Stack Role -->
+                  <div>
+                    <h5 class="text-lg font-semibold">Développeur Full-Stack</h5>
+                    <span>Client : Domaine du Paramédical et Assurance (OCIRP)</span>
+                    <div class="flex items-center">
+                      <div class="w-2/5 h-2 bg-blue-500"></div>
+                      <div class="w-1/5 h-2 bg-green-500"></div>
+                      <div class="w-2/5 h-2 bg-red-500">
+                      </div>
+                    </div>
+                    <div class="hidden lg:flex items-center mt-1">
+                      <div class="w-2/5 flex flex-row gap-1">
+                        <img src="/typescript.svg" class="max-h-[30px] max-w-[30px]" alt="Typescript logo" />
+                        <img src="/angular-icon-1.svg" class="max-h-[30px] max-w-[30px]" alt="Angular logo"/>
+                        <img src="/rxjs.svg" class="max-h-[30px] max-w-[30px]" alt="RXJS logo"/>
+                      </div>
+                      <div class="w-1/5 flex flex-row gap-1">
+                        <img src="/c--4.svg" class="max-h-[30px] max-w-[30px]" alt="C# logo" />
+                        <img src="/swagger.svg" class="max-h-[30px] max-w-[30px]" alt="Swagger logo" />
+                      </div>
+                      <div class="w-2/5">
+                        <img src="/tsql.svg" class="max-h-[30px] max-w-[30px]" alt="SQL Microsoft Server logo" />
+                      </div>
+                    </div>
+                    <p class="mt-2 text-sm">Technologies : TypeScript, Angular, RxJs, C#, T-SQL</p>
+                  </div>
+                  <!-- Frontend Role -->
+                  <div>
+                    <h5 class="text-lg font-semibold">Développeur Frontend</h5>
+                    <span>Client : Elsa (Domaine Agricole)</span>
+                    <div class="flex items-center">
+                      <div class="w-3/4 h-2 bg-blue-500"></div>
+                      <div class="w-1/4 h-2 flex flex-row">
+                        <div class="w-1/2 h-2 bg-green-500"></div>
+                        <div class="w-1/2 h-2 bg-red-500"></div>
+                      </div>
+                    </div>
+                    <div class="hidden lg:flex items-center mt-1">
+                      <div class="w-3/4 flex flex-row gap-1">
+                        <img src="/vite.svg" class="max-h-[30px] max-w-[30px]" alt="Vite logo" />
+                        <img src="/typescript.svg" class="max-h-[30px] max-w-[30px]" alt="Typescript logo" />
+                        <img src="/tailwindcss.svg" class="max-h-[30px] max-w-[30px]" alt="tailwind logo" />
+                        <img src="/vue.svg" class="max-h-[30px] max-w-[30px]" alt="Vue.js logo" />
+                        <img src="/nuxt.svg" class="max-h-[30px] max-w-[30px]" alt="Nuxt logo" />
+                        <img src="/primevue.png" class="max-h-[30px] max-w-[30px]" alt="Primevue logo" />
+                      </div>
+                      <div class="w-1/4 flex flex-row">
+                        <div class="w-1/2 flex flex-row gap-1">
+                          <img src="/c--4.svg" class="max-h-[30px] max-w-[30px]" alt="C# logo" />
+                          <img src="/swagger.svg" class="max-h-[30px] max-w-[30px]" alt="Swagger logo" />
+                          <img src="/rabbitmq.svg" class="max-h-[30px] max-w-[30px]" alt="RabbitMQ logo" />
+                        </div>
+                        <div class="w-1/2 flex flex-row gap-1">
+                          <img src="/postgresql.svg" class="max-h-[30px] max-w-[30px]" alt="Postgre-SQL logo" />
+                        </div>
+                      </div>
+                    </div>
+                    <p class="mt-2 text-sm">Technologies : Vite, TypeScript, Tailwind, Vue, Nuxt, Primevue, C#, Rabbit-MQ, Postgre-SQL</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+>
+
+
           <hr />
           <div class="line roboto-regular">
             <h2 class="text-center text-xl">Mes projets</h2>
